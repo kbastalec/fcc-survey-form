@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <div id="container">
+        <h1 id="title">XYZ Survey Form</h1>
+        <p id="description">
+        <em>Thank you for taking the time to help us improve our service</em>
+        </p>
+        <div id="form-container">
+            <form id="survey-form">
+                <div class="survey-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="survey-group">
+                    <label id="email-label" for="name">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="survey-group">
+                    <label id="number-label" for="name">Age<span class="space">(Optional)</span></label>
+                    <input type="number" min="1" max="99" name="number" id="number" placeholder="Age">
+                </div>
+                <div class="survey-group">
+                    <p>
+                    Which option..?
+                    </p>
+                <select id="dropdown">
+                    <option selected disabled>Select one</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+                </div>
+                <div class="survey-group">
+                    <p>
+                    Would you recommend XYZ to a friend?
+                    </p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" checked>Definitely
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio">Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio">Not sure
+                    </label>
+                </div>
+                <div class="survey-group">
+                    <p>What would you like to see improved? <span class="space">(Check all that apply)</span></p>
+                    <label>
+                        <input name="check" value="a" type="checkbox">A
+                    </label>
+                    <label>
+                        <input name="check" value="b" type="checkbox">B
+                    </label>
+                    <label>
+                        <input name="check" value="c" type="checkbox">C
+                    </label>
+                </div>
+                <div class="survey-group">
+                    <p>
+                    Any comments or suggestions?
+                    </p>
+                    <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="survey-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form> 
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
